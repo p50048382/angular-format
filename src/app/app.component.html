@@ -1,0 +1,45 @@
+<mat-toolbar class="header mat-elevation-z6" color="primary">
+    <!-- <button mat-icon-button matTooltip="Back">
+      <mat-icon>keyboard_backspace</mat-icon>
+    </button> -->
+    <span class="fill-remaining-space"></span>
+    <span>Application_Name</span>
+    <span class="fill-remaining-space"></span>
+    <button
+      mat-icon-button
+      matTooltip="info"
+      color="white"
+      aria-label="Guidelines"
+    >
+      <mat-icon>info</mat-icon>
+    </button>
+  </mat-toolbar>
+  <!-- <h2><a [routerLink]="'/table'">Contacts</a></h2> -->
+  <div class="new-margin">
+    body component goes here
+    <!-- <router-outlet></router-outlet> -->
+  </div>
+
+  <!-- Footer  -->
+  <mat-toolbar class="footer">
+    <span class="fill-remaining-space"></span>
+    <span class="fill-remaining-space"></span>
+    <span>
+  
+      <button
+        mat-raised-button
+        type="button"
+        [ngClass]="{
+          button1: true,
+          'ml-2': true,
+          btnDisabled: '!selection.hasValue()'
+        }"
+        color="primary"
+        style="width: 100px; height: 30px;"
+      >
+        Process
+      </button>
+     
+    </span>
+  </mat-toolbar>
+  
