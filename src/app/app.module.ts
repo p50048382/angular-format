@@ -4,12 +4,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RoutingModule } from './routing/routing.module';
 
 import { AppComponent } from './app.component';
+import { PageNotFoundComponent } from './components/page-not-found/page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+	PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -17,7 +20,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
-    HttpClientModule
+    HttpClientModule,
+	//RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
